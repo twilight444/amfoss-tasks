@@ -1,0 +1,22 @@
+Discovered Keys / Flags:
+
+LEVEL 1
+AWAKENING_SIGNATURE: ONE_PIECE{GITO_GITO_NO_AWAKENING}
+
+LEVEL 2
+BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
+
+LEVEL 3
+PONEGLYPH_FRAGMENT_I: KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnL
+
+LEVEL 4
+PONEGLYPH_FRAGMENT_II: SwnbzptDiM3JSpvFiMuJ28PJzAlJ28VIzA=
+
+LEVEL 5
+Combined Key: KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnLSwnbzptDiM3JSpvFiMuJ28PJzAlJ28VIzA=
+Decoded URL: https://github.com/r0gueone-x/Laugh-Tale-Merge-War
+Correct URL: https://github.com/rogueone-x/Laugh-Tale-Merge-War
+
+LEVEL 6
+Password: TheGrandLineRemembers
+Final Flag: FLAG{The_Grand_Line_Remembers_Your_Commit}
