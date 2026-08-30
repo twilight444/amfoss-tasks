@@ -1,0 +1,20 @@
+Question Link: https://leetcode.com/problems/two-sum/description/
+Problem: 1. Two Sum
+Difficulty: Easy
+
+Approach:
+We just need to pick one element in nums and calculate its complement
+(r = target - nums[i]) so that they add up to the target. Then we check
+if that number r is in nums and ensure the index of r is not equal to
+the current index i so we don't use the same element twice. Once we find
+the correct r, we return the indices and break the loop.
+
+My Code:
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        n = len(nums)
+        for i in range(n):
+            r = target - nums[i]
+            if r in nums and nums.index(r) != i :
+                return([i, nums.index(r)])
+                break
