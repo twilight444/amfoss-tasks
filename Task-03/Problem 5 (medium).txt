@@ -1,0 +1,15 @@
+Question Link: https://leetcode.com/problems/maximum-substrings-with-distinct-start/description/
+Problem: 3760. Maximum Substrings With Distinct Start
+Difficulty: Medium
+
+Approach:
+Since every substring must start with a unique character, no two substrings
+can begin with the same letter. The maximum number of such substrings is equal
+to the number of distinct characters present in the string. By converting the
+string into a set using set(s), we get all unique characters, and returning
+its length gives the maximum possible number of substrings.
+
+My Code:
+class Solution:
+    def maxDistinct(self, s: str) -> int:
+        return len(set(s))
