@@ -1,0 +1,14 @@
+Question Link: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
+Problem: 28. Find the Index of the First Occurrence in a String
+Difficulty: Easy
+
+Approach:
+The find() method for strings in Python already does the job of finding
+the index of a substring in the string. If the substring exists, it returns
+its first index, and if it doesn't exist, it returns -1. So returning
+haystack.find(needle) gives the answer directly.
+
+My Code:
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        return haystack.find(needle)
