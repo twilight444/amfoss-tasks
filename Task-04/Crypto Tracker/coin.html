@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Coins</a>
+        <button id="themeBtn">☀️</button>
+
+        <div class="coin-header">
+            <div id="coinLeft" class="coin-header-left"></div>
+            <div class="coin-header-right">
+                <button id="favBtn" class="fav-btn">★</button>
+                <div id="coinPrice"></div>
+            </div>
+        </div>
+
+        <div class="timeframe-buttons">
+            <button class="time-btn" data-days="1">24H</button>
+            <button class="time-btn" data-days="7">7D</button>
+            <button class="time-btn active" data-days="30">30D</button>
+            <button class="time-btn" data-days="90">90D</button>
+            <button class="time-btn" data-days="365">1Y</button>
+        </div>
+
+        <div class="chart-wrapper">
+            <canvas id="priceChart"></canvas>
+        </div>
+    </div>
+    <script src="coin.js"></script>
+</body>
+</html>
