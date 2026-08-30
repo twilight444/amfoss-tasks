@@ -1,0 +1,25 @@
+Question Link: https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/
+Problem: 1769. Minimum Number of Operations to Move All Balls to Each Box
+Difficulty: Medium
+
+Approach:
+We first store the indices of all the ones in a list. Then to find
+the total number of steps to move all the balls to that current index,
+we find the absolute difference between the current index and each
+element in the list. We do that for every position using a loop and
+append the sum of operations to our answer list.
+
+My Code:
+class Solution:
+    def minOperations(self, boxes: str) -> List[int]:
+        one=[]
+        ans=[]
+        for i in range (len(boxes)):
+            if boxes[i] == "1":
+                one.append(i)
+        for i in range (len(boxes)):
+            r=0
+            for j in one:
+                r=r + abs(i-j)
+            ans.append(r)
+        return(ans)
